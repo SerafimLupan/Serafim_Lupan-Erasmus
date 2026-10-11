@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>root@serafimlupan.com:~# ./serafimlupan.sh</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <canvas id="matrix-canvas"></canvas>
+
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="nav-prompt">
+        <span class="user">root@serafimlupan.com</span>:<span class="path">~</span># ./serafimlupan.sh
+      </div>
+
+      <nav class="nav-desktop">
+        <a href="#system"        >[1. Overview]</a>
+        <a href="#about"         >[2. About]</a>
+        <a href="#skills"        >[3. Skills]</a>
+        <a href="#experience"    >[4. Experience]</a>
+        <a href="#education"     >[5. Education]</a>
+        <a href="#certifications">[6. Certifications]</a>
+        <a href="#projects"      >[7. Projects]</a>
+        <a href="#achievements"  >[8. Achievements]</a>
+      </nav>
+
+      <button id="menu-toggle" class="hamburger-btn">
+        <span id="menu-icon">[ + ] MENU</span>
+      </button>
+    </div>
+
+    <div id="mobile-menu" class="hidden">
+      <a href="#system"         class="mobile-link">├── load_overview()</a>
+      <a href="#about"          class="mobile-link">├── display_about_me()</a>
+      <a href="#skills"         class="mobile-link">├── render_skills()</a>
+      <a href="#experience"     class="mobile-link">├── load_experience()</a>
+      <a href="#education"      class="mobile-link">├── load_education_history()</a>
+      <a href="#certifications" class="mobile-link">├── load_certifications()</a>
+      <a href="#projects"       class="mobile-link">├── list_projects()</a>
+      <a href="#achievements"   class="mobile-link">└── parse_achievements()</a>
+    </div>
+  </header>
+
+
+
+  <main class="terminal-wrapper">
+    <div id="boot-sequence"></div>
+
+    <div id="main-content" class="hidden">
+
+      <div id="sec-banner" class="stream-section hidden">
+        <pre>
+  ▄▄▄▄▄                     ▄▄               ▄▄▄                            
+ ██▀▀▀▀█▄                  ██               ▀██▀                            
+ ▀██▄  ▄▀       ▄         ▄██▄▀▀ ▄           ██                        ▄    
+   ▀██▄▄  ▄█▀█▄ ████▄▄▀▀█▄ ██ ██ ███▄███▄    ██      ██ ██ ████▄ ▄▀▀█▄ ████▄
+ ▄   ▀██▄ ██▄█▀ ██   ▄█▀██ ██ ██ ██ ██ ██    ██      ██ ██ ██ ██ ▄█▀██ ██ ██
+ ▀██████▀▄▀█▄▄▄▄█▀  ▄▀█▄██▄██▄██▄██ ██ ▀█   ████████▄▀██▀█▄████▀▄▀█▄██▄██ ▀█
+                           ██                              ██               
+                          ▀▀ 
+        </pre>
+      </div>
+
+      <section id="system" class="stream-section hidden">
+        <div class="cmd-prompt">root@serafimlupan.com:~# fastfetch --user serafimlupan</div>
+        <div class="section-box">
+          <div class="info-list">
+            <div><span                         class="label">User:          </span> Serafim Lupan</div>
+            <div><span                         class="label">Location:      </span> Fălticeni, Suceava / Căușeni</div>
+            <div><span                         class="label">Education:     </span> "Vasile Lovinescu" High School (Mathematics & Computer Science)</div>
+            <div><span                         class="label">Primary Focus: </span> Web Development, Digital Security, Automation</div>
+            <div><span                         class="label">Languages:     </span> Romanian (Native), Russian (Bilingual), English, French</div>
+            <div><span                         class="label">Interests:     </span> Playing Guitar, Reading Educational Books, Exploring Linux, Technology, Human Biology, Nature</div>
+            <div><span                         class="label">Email:         </span> <a href="mailto:root@serafimlupan.com"                         class="url-fastfetch">root@serafimlupan.com</a></div>
+            <div><span                         class="label">GitHub:        </span> <a href="https://github.com/SerafimLupan"      target="_blank" class="url-fastfetch">github.com/SerafimLupan</a></div>
+            <div><span                         class="label">LinkedIn:      </span> <a href="https://linkedin.com/in/serafimlupan" target="_blank" class="url-fastfetch">linkedin.com/in/serafimlupan</a></div>
+            <div><span                         class="label">Website:       </span> <a href="https://serafimlupan.com"             target="_blank" class="url-fastfetch">serafimlupan.com</a></div>
+            <div class="cv-download-row"><span class="label">Resume:        </span> <a href="CV_Serafim_Lupan.pdf" download                            class="cv-button">[ Download CV_Lupan Serafim.pdf ]</a></div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section id="about" class="stream-section hidden">
+        <div class="cmd-prompt">root@serafimlupan.com:~# cat /home/serafimlupan/about.txt</div>
+        <div class="section-box">
+          <pre class="about-text">
+
+  ABOUT ME                                                                       
+
+  Hi! I'm Serafim. I am driven by deep curiosity about how things work around us — whether it's software systems, modern technology, the human body, or natural mechanisms.
+
+  In my spare time, I enjoy playing the guitar, reading educational books to broaden my perspective, and exploring Linux operating systems. I build clean websites, automate everyday tasks, and continuously learn how stuff works.     
+
+          </pre>
+        </div>
+      </section>
+
+
+
+      <section id="skills" class="stream-section hidden">
+        <div class="cmd-prompt">root@serafimlupan.com:~# btop --view-skills</div>
+        <div class="section-box">
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>[01] DIGITAL_SECURITY_&_NETWORKS</span>
+              <span>90%</span>
+            </div>
+            <p>
+              Understanding network structures, identifying system vulnerabilities, analyzing data traffic, OSINT research.
+            </p>
+            <div class="progress-bar">[██████████████████████████████████████░░░░]</div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>[02] WEB_DEV_&_DESIGN</span>
+              <span>85%</span>
+            </div>
+            <p>
+              Building modern websites and user interfaces using HTML, CSS, JavaScript, React, and TypeScript.
+            </p>
+            <div class="progress-bar">[██████████████████████████████████░░░░░░░░]</div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-header">
+              <span>[03] SYSTEMS_&_PROGRAMMING</span>
+              <span>88%</span>
+            </div>
+            <p>
+              Using Linux, writing automated scripts (Bash, Python), C++ programming, Git project management.
+            </p>
+            <div class="progress-bar">[███████████████████████████████████░░░░░░░]</div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section id="experience" class="stream-section hidden">
+        <div class="cmd-prompt">root@serafimlupan.com:~# cat /home/serafimlupan/experience.txt</div>
+        <div class="section-box space-y">
+          <div class="experience-card">
+            <div class="experience-header">
+              <span class="role-title">IT Instructor & Robotics Club Mentor (Volunteer)</span>
+              <span class="time-frame">[09.2021 – 06.2025]</span>
+            </div>
+            <div class="org-name">District Public Library "Ion Ungureanu", Căușeni, Moldova</div>
+            <p>
+              Active volunteer and mentor assisting the head robotics instructor. Taught basic web development, logic programming, structured languages, and system administration to kids aged 7 to 11. Managed LEGO robotics kits, prepared student teams for regional competitions, and maintained library computer lab equipment.
+            </p>
+            <div class="project-link">
+              Reference: 
+              <a href="https://bprcauseni.wordpress.com/2021/03/18/youthub/#:~:text=Serafim%20Lupan" target="_blank">
+                bprcauseni.wordpress.com/youthub
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section id="education" class="stream-section hidden">
+        <div class="cmd-prompt">root@serafimlupan.com:~# cat /home/serafimlupan/education.txt</div>
+        <div class="section-box space-y">
+          <div class="education-card">
+            <div class="education-header">
+              <span class="school-name">College "Vasile Lovinescu", Fălticeni, Romania</span>
+              <span  class="time-frame">[09.2025 – present]</span>
+            </div>
+            <div class="degree-title">High School Diploma — Mathematics & Computer Science</div>
+            <div    class="gpa-badge">GPA: 9.79 / 10.00 (10th Grade)</div>
+            <p>
+              Intensive studies in problem-solving, programming logic, computer science fundamentals, and digital security research.
+            </p>
+          </div>
+
+          <div class="education-card">
+            <div class="education-header">
+              <span class="school-name">"Alexei Mateevici" High School, Căușeni, Moldova</span>
+              <span  class="time-frame">[09.2020 – 05.2025]</span>
+            </div>
+            <div class="degree-title">Middle School Certificate — STEM Focus</div>
+            <div    class="gpa-badge">GPA: 8.49 / 10.00</div>
+            <p>
+              Strong foundation in Mathematics, Physics, and Computer Science. Active participation in regional robotics and programming contests.
+            </p>
+          </div>
+
+          <div class="education-card">
+            <div class="education-header">
+              <span class="school-name">"Mihai Eminescu" High School, Căușeni, Moldova</span>
+              <span  class="time-frame">[09.2016 – 05.2020]</span>
+            </div>
+            <div class="degree-title">Elementary Education</div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section id="certifications" class="stream-section hidden">
+        <div class="cmd-prompt">root@serafimlupan.com:~# cat /var/log/certifications.json</div>
+        <div class="section-box space-y">
+
+          <div class="cert-card">
+            <div class="cert-header">
+              <span class="cert-title">Generative Artificial Intelligence</span>
+              <span  class="cert-date">[10.2024]</span>
+            </div>
+            <div class="cert-issuer">
+              Issuer: <span class="issuer-name">SuperCoders</span>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-header">
+              <span class="cert-title">Legacy JavaScript Algorithms and Data Structures Certification V7</span>
+              <span  class="cert-date">[11.2023]</span>
+            </div>
+            <div class="cert-issuer">
+              Issuer: <span class="issuer-name">freeCodeCamp</span>
+            </div>
+            <div   class="cert-link">
+              | Verify: <a href="https://www.freecodecamp.org/certification/serafim_lupan/javascript-algorithms-and-data-structures" target="_blank">freecodecamp.org/.../javascript-algorithms-and-data-structures</a>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-header">
+              <span class="cert-title">Legacy Responsive Web Design Certification V8</span>
+              <span class="cert-date">[10.2023]</span>
+            </div>
+            <div class="cert-issuer">
+              Issuer: <span class="issuer-name">freeCodeCamp</span>
+            </div>
+            <div class="cert-link">
+              | Verify: <a href="https://www.freecodecamp.org/certification/serafim_lupan/responsive-web-design" target="_blank">freecodecamp.org/.../responsive-web-design</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section id="projects" class="stream-section hidden">
+        <div class="cmd-prompt">root@serafimlupan.com:~# ls -la /home/serafimlupan/projects</div>
+        <div class="section-box space-y">
+
+          <div class="project-card">
+            <div class="project-header">
+              <span                     >drwxr-xr-x history-website</span>
+              <span class="project-tech">[11.06.2026 – present]</span>
+            </div>
+            <p>
+              Web site for my history project that will be presented in January 2027 at a competition.
+            </p>
+            <div class="project-link">
+              | Link: <a href="https://istorie.serafimlupan.com" target="_blank">
+                istorie.serafimlupan.com
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <span                     >drwxr-xr-x CTF_HELPER</span>
+              <span class="project-tech">[02.02.2026]</span>
+            </div>
+            <p>
+              A modular automation framework inspired by HackTricks methodology, designed for streamlined CTF reconnaissance and exploitation.
+            </p>
+            <div class="project-link">
+              | Link: <a href="https://github.com/SerafimLupan/CTF_HELPER" target="_blank">
+                github.com/SerafimLupan/CTF_HELPER
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <span                     >drwxr-xr-x Local_NetScan</span>
+              <span class="project-tech">[10.01.2026]</span>
+            </div>
+            <p>
+              A professional Bash script for automated local network discovery, host identification, and port scanning.
+            </p>
+            <div class="project-link">
+              | Link: <a href="https://github.com/SerafimLupan/Local_NetScan" target="_blank">
+                github.com/SerafimLupan/Local_NetScan
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <span                     >drwxr-xr-x Serafim_Lupan-v2</span>
+              <span class="project-tech">[04.01.2026 – present]</span>
+            </div>
+            <p>
+              My personal portfolio website. Built using React, TypeScript, and Tailwind CSS.
+            </p>
+            <div class="project-link">
+              | Link: <a href="https://serafimlupan.com" target="_blank">
+                serafimlupan.com
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <span                     >drwxr-xr-x Serafim_Lupan-v1</span>
+              <span class="project-tech">[24.10.2024 – 03.11.2025]</span>
+            </div>
+            <p>
+              My first personal portfolio website. Built using HTML, CSS, and JavaScript.
+            </p>
+            <div class="project-link">
+              | Link: <a href="https://serafimlupan.github.io/Serafim_Lupan-v1/" target="_blank">
+                serafimlupan.github.io/Serafim_Lupan-v1
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <span                     >drwxr-xr-x REWERS Barbershop</span>
+              <span class="project-tech">[12.2023 – 01.2024]</span>
+            </div>
+            <p>
+              Modern layout and booking section. Unfinished due to client requirements/timeline changes.
+            </p>
+            <div class="project-link">
+              | Link: <a href="https://serafimlupan.github.io/Serafim_Lupan-v1/projects/Rewers%20BARBERSHOP%20website/index.html" target="_blank">
+                serafimlupan.github.io/.../Rewers-BARBERSHOP
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <span                     >drwxr-xr-x Vladiox Store</span>
+              <span class="project-tech">[10.2022 – 06.2023]</span>
+            </div>
+            <p>
+              E-commerce furniture store concept layout.
+            </p>
+            <div class="project-link">
+              | Link: <a href="https://serafimlupan.github.io/Vladiox/" target="_blank">
+                serafimlupan.github.io/Vladiox
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-header">
+              <span                     >drwxr-xr-x TIFS Project</span>
+              <span class="project-tech">[10.2022 – 03.2023]</span>
+            </div>
+            <p>
+              Web development fundamentals and practical exercises (HTML/CSS/JS).
+            </p>
+            <div class="project-link">
+              | Link: <a href="https://serafimlupan.github.io/DezvoltareWeb/" target="_blank">
+                serafimlupan.github.io/DezvoltareWeb
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+      <section id="achievements" class="stream-section hidden">
+        <div class="cmd-prompt">root@serafimlupan.com:~# cat /var/log/achievements.log</div>
+        <div class="section-box log-list">
+          <div class="log-row">
+            <span>
+              [2026-09-20] DefCamp CTF 2026 Quals — 13th World (out of 886) & 2nd in Romania (out of 133)                    
+            </span> 
+            <span class="status-badge">
+              [ QUALIFIED ]
+            </span>
+          </div>
+          <div class="log-row">
+            <span>
+              [2026-04-24] 3rd place at Cybersecurity Olympiad - County Level (Suceava), 10th grade                          
+            </span> 
+            <span class="status-badge">
+              [ 3RD PLACE ]
+            </span>
+          </div>
+          <div class="log-row">
+            <span>
+              [2026-04-24] 13th place at Cybersecurity Olympiad - County Level (Suceava), all grades (9th–12th)              
+            </span> 
+            <span class="status-badge">
+              [ 13TH PLACE ]
+              </span>
+            </div>
+          <div class="log-row">
+            <span>
+              [2026-04-24] 63rd place at Cybersecurity Olympiad - National Level (Romania), 10th grade                       
+            </span> 
+            <span class="status-badge">
+              [ 63RD PLACE ]
+              </span>
+            </div>
+          <div class="log-row">
+            <span>
+              [2026-04-24] 220th place at Cybersecurity Olympiad - National Level (Romania), all grades (9th–12th)           
+            </span> 
+            <span class="status-badge">
+              [ 220TH PLACE ]
+              </span>
+            </div>
+          <div class="log-row">
+            <span>
+              [2026-03-08] 43rd place at UNbreakable Romania Teams - Edition 2026 - National Level                           
+            </span> 
+            <span class="status-badge">
+              [ 43RD PLACE ]
+            </span>
+          </div>
+          <div class="log-row">
+            <span>
+              [2025-04] 11th place at Informatics Olympiad - Republican Level (Republic of Moldova)                          
+            </span> 
+            <span class="status-badge">
+              [ 11TH PLACE ]
+              </span>
+            </div>
+          <div class="log-row">
+            <span>
+              [2025-02] 1st place at Informatics Olympiad - County Level (Căușeni, Republic of Moldova)                      
+            </span> 
+            <span class="status-badge">
+              [ 1ST PLACE ]
+            </span>
+          </div>
+          <div class="log-row">
+            <span>
+              [2025-02] 17th place at Tekwill Junior Ambassadors - Republican Competition (Republic of Moldova)              
+            </span> 
+            <span class="status-badge">
+              [ 17TH PLACE ]
+              </span>
+            </div>
+          <div class="log-row">
+            <span>
+              [2024-05] 3rd place at Informatics Olympiad - County Level (Căușeni, Republic of Moldova)                      
+            </span> 
+            <span class="status-badge">
+              [ 3RD PLACE ]
+            </span>
+          </div>
+          <div class="log-row">
+            <span>
+              [2023-06] 4th place at Tekwill Junior Ambassadors - Republican Competition (Republic of Moldova)               
+            </span> 
+            <span class="status-badge">
+              [ 4TH PLACE ]
+            </span>
+          </div>
+          <div class="log-row">
+            <span>
+              [2023-03] 2nd place at Tekwill Junior Ambassadors - Regional Competition (Center Region, Republic of Moldova)  
+            </span> 
+            <span class="status-badge">
+              [ 2ND PLACE ]
+            </span>
+          </div>
+          <div class="log-row">
+            <span>
+              [2020 - 2023] Participant in ROBO LIGA BIBLIOTECILOR (Robo Libraries League)                                   
+            </span> 
+            <span class="status-badge">
+              [ PARTICIPANT ]
+              </span>
+            </div>
+        </div>
+      </section>
+
+
+
+      <div id="sec-footer" class="stream-section hidden terminal-footer">
+        <span class="user">root@serafimlupan.com:~#</span>
+        <span class="cursor-blink"></span>
+      </div>
+
+      <footer class="site-footer">
+        [Script ./serafimlupan.sh completed with return code 0] &copy; Serafim Lupan.
+      </footer>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
