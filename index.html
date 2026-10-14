@@ -97,36 +97,6 @@
   Hi! I'm Serafim. I am driven by deep curiosity about how things work around us — whether it's software systems, modern technology, the human body, or natural mechanisms.
 
   In my spare time, I enjoy playing the guitar, reading educational books to broaden my perspective, and exploring Linux operating systems. I build clean websites, automate everyday tasks, and continuously learn how stuff works.     
-  
-  
-  #include <iostream>
-using namespace std;
-int main() {
-    char text[256];
-    cin.getline(text, 256);
-    char vocale[] = {'a', 'A', 'e', 'E', 'i', 'I', 'o', 'O', 'u', 'U'};
-    int contor = 0, i = 0;
-    while (text[i] != '\0') {
-        while (text[i] == ' ' && text[i] != '\0') i++;
-        if (text[i] == '\0') break;
-        int start = i;
-        while (text[i] != ' ' && text[i] != '\0') i++;
-        int end = i - 1;
-        int prima = 0, ultima = 0;
-        for (int v = 0; v < 10; v++) {
-            if (text[start] == vocale[v]) prima = 1;
-            if (text[end] == vocale[v]) ultima = 1;
-        }
-        if (prima && ultima) contor++;
-    }
-    if (contor > 0) cout << contor << "\n";
-    else cout << "NU EXISTA\n";
-    return 0;
-}
-
-  
-  
-  
 
           </pre>
         </div>
